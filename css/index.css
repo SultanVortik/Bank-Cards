@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "main-font";
+    src: url(../src/fonts/main-font.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "second-font";
+    src: url(../src/fonts/seconds-font.ttf) format('truetype');
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        90deg,
+        #360729,
+        #BE5790,
+        #E6CBDF
+    );
+    backdrop-filter: blur(10px);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.auth_form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F8EEF6;
+    height: 500px;
+    width: 25%;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+.auth_form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+    font-family: "main-font";
+}
+.auth_form label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.7rem;
+    margin-top: 10px;
+    font-family: "second-font";
+}
+
+.auth_form label input {
+    border-radius: 10px;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    background-color: #EAE1EA;
+    border: none;
+    font-family: "second-font";
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12%;
+    font-size: 1.2rem;
+    font-family: "main-font";
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.auth_form button {
+    font-size: 2rem;
+    margin-top: 60px;
+    width: 80%;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #6a1358;
+    font-family: "main-font";
+    color: white;
+    transition: 0.3s;
+}
+.auth_form button:hover {
+    transition: 0.3s;
+    box-shadow: 0 0 30px #BE5790;
+}
+
+.auth_form button:active {
+    opacity: 0.7;
+}
