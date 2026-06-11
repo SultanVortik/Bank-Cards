@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "main-font";
+    src: url(../src/fonts/main-font.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "second-font";
+    src: url(../src/fonts/seconds-font.ttf) format('truetype');
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(
+        90deg,
+        #360729,
+        #BE5790,
+        #E6CBDF
+    );
+    backdrop-filter: blur(10px);
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.profile__img {
+    border-radius: 50%;
+}
+
+.profile__text {
+    font-family: "main-font";
+    font-size: 2rem;
+}
+
+
+.cards-container{
+    background-color: #E6CBDF;
+    width: 100%;
+    box-shadow: 0 -5px 10px black;
+    height: 600px;
+    margin-top: 30px;
+}
+
+.cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   gap: 15px;
+   height: 250px;
+}
+
+.card {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card__numbers {
+    margin-top: 200px;
+    margin-left: 10px;
+    font-family: "second-font";
+    color: #E6CBDF;
+    font-size: 1.5rem;
+}
+
+.add_card {
+    margin-top: 50px;
+    margin-left: 10px;
+}

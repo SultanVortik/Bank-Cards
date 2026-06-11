@@ -80,9 +80,16 @@ body {
     font-size: 1.2rem;
     font-family: "main-font";
 }
+
 .footer a {
     text-decoration: none;
     color: black;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    text-shadow: 0 0 5px #F8EEF6;
+    transition: 0.3s;
 }
 
 .auth_form button {
@@ -105,3 +112,5 @@ body {
 .auth_form button:active {
     opacity: 0.7;
 }
+
+
