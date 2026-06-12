@@ -84,3 +84,22 @@ body::-webkit-scrollbar {
     margin-top: 50px;
     margin-left: 10px;
 }
+
+.add_card__button {
+    background-color: transparent;
+    border: none;
+    font-family: "main-font";
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.add_card__button:hover {
+    transition: 0.5s;
+    text-shadow: 0 0 30px #BE5790;
+}
+
+.add_card__button:active {
+    opacity: 0.7;
+    transition: 0.5s;
+}
