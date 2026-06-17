@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
 }
 
 .card {
-    background-color: red;
+    background-color: green;
     width: 100%;
     height: 100%;
     margin: 20px;
@@ -72,12 +72,17 @@ body::-webkit-scrollbar {
     justify-content: flex-start;
 }
 
-.card__numbers {
+.card__el {
     margin-top: 200px;
-    margin-left: 10px;
+    margin-left: -40px;
     font-family: "second-font";
     color: #E6CBDF;
     font-size: 1.5rem;
+}
+
+.title {
+    margin-top: 150px;
+    margin-left: 10px;
 }
 
 .add_card {
