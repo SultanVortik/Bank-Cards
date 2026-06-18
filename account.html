@@ -6,7 +6,7 @@
     <title>Bank-Cards</title>
     <link rel="stylesheet" href="css/account.css">
 </head>
-<body>
+<body class="">
     <div class="profile-container">
         <img src="src/img/account.jpg" class="profile__img" alt="">
         <h3 class="profile__text">User</h3>
@@ -20,9 +20,25 @@
             </div>
         </div>
         <div class="add_card">
-            <button class="add_card__button">+ Add payment method</button>
+            <button class="add_card__button modal-window-open-btn">+ Add payment method</button>
         </div>
     </div>
+    <div class="modal-window">
+        <form action="">
+            <input type="number" placeholder="card number" class="card-number-input">
+            <label for="city">Payment system: 
+            <select name="city" id="city" class="payment-system" required>
+                <option value="MIR">MIR</option>
+                <option value="VISA">VISA</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="UnionPay">UnionPay</option>
+            </select>
+            </label>
+            <button class="add_card__button margin-top add-card-btn">Add card</button>
+            <button class="add_card__button close-window-btn">Cancel</button>          
+        </form>   
+    </div>
     <script src="/js/api.js" type="module"></script>
+    <script src="/js/addCards.js" type="module"></script>
 </body>
 </html>

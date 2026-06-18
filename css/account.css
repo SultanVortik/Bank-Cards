@@ -108,3 +108,69 @@ body::-webkit-scrollbar {
     opacity: 0.7;
     transition: 0.5s;
 }
+
+.modal-window {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#E6CBDF;
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+}
+
+.modal-window form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-window input {
+    border-radius: 10px;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    background-color: #EAE1EA;
+    border: none;
+    font-family: "second-font";
+}
+
+.modal-window form label {
+    font-family: "main-font";
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+
+.modal-window form select {
+    border-radius: 10px;
+    font-size: 2rem;
+    margin-top: 10px;
+    background-color: #EAE1EA;
+    border: none;
+    font-family: "second-font";
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+
+.window-open {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    overscroll-behavior: none;
+    background: linear-gradient(
+        90deg,
+        #360729,
+        #BE5790,
+        #E6CBDF
+    );
+}
+
+.modal-window-open {
+    display: flex;
+}
